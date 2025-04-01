@@ -31,10 +31,10 @@ class Program
         Thread.Sleep(1500);
 
         Console.WriteLine("Filling connection fields...");
-        SetText(mainWindow, ControlType.Edit, "DEV_DB", "Connection Name");
-        SetText(mainWindow, ControlType.Edit, "amednhosskgdksdf", "Host Name");
-        SetText(mainWindow, ControlType.Edit, "3131", "Port");
-        SetText(mainWindow, ControlType.Edit, "yuarraq", "User Name");
+        SetText(mainWindow, ControlType.Edit, "dev", "Connection Name");
+        SetText(mainWindow, ControlType.Edit, "dev", "Host Name");
+        SetText(mainWindow, ControlType.Edit, "dev", "Port");
+        SetText(mainWindow, ControlType.Edit, "dev", "User Name");
 
         InvokeByName(mainWindow, "Store in Vault ...");
         Thread.Sleep(1000);
@@ -44,7 +44,7 @@ class Program
 
         if (popup != null)
         {
-            SetText(popup, ControlType.Edit, "somepasswordherebro");
+            SetText(popup, ControlType.Edit, "dev");
             InvokeByName(popup, "OK");
             Console.WriteLine("✅ Password entered and confirmed.");
         }
